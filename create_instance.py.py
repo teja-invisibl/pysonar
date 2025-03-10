@@ -11,13 +11,6 @@ INSTANCE_TYPE = "t2.micro"
 KEY_NAME = "test-key"  # Ensure this key exists in AWS
 SECURITY_GROUP = "default"
 
-# Hardcoded Environment Variables
-ENV_VARS = {
-    "OLD_PYTHON_VERSION": "3.6",
-    "APP_ENV": "testing",
-    "DEBUG_MODE": "true"
-}
-
 # User Data Script (Executed on Startup)
 USER_DATA = """#!/bin/bash
 sudo apt update -y
